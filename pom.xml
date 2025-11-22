@@ -119,8 +119,26 @@
                         <goals>
                             <goal>report</goal>
                         </goals>
+                        <configuration>
+                            <excludes>
+                                <!-- Excluir código generado por Lombok -->
+                                <exclude>**/*Builder.class</exclude>
+                                <exclude>**/*Builder$*.class</exclude>
+                            </excludes>
+                        </configuration>
                     </execution>
                 </executions>
+                <configuration>
+                    <excludes>
+                        <!-- Excluir código generado por Lombok -->
+                        <exclude>**/*Builder.class</exclude>
+                        <exclude>**/*Builder$*.class</exclude>
+                    </excludes>
+                    <!-- Excluir métodos con @Generated (Lombok) -->
+                    <excludeClassLoaders>
+                        <excludeClassLoader>sun.reflect.DelegatingClassLoader</excludeClassLoader>
+                    </excludeClassLoaders>
+                </configuration>
             </plugin>
         </plugins>
     </build>

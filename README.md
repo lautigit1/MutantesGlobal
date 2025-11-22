@@ -36,7 +36,6 @@ TCACTG
 - **H2 Database** (persistente en disco: `~/test`)
 - **Lombok** (reducción de boilerplate)
 - **Swagger/OpenAPI** (documentación)
-- **Frontend estático** con Tailwind CSS
 - **JUnit 5 + Mockito** (testing)
 - **Jacoco** (cobertura de código)
 
@@ -78,22 +77,6 @@ Arquitectura N-Capas con separación clara de responsabilidades:
 - Validación customizada `@ValidDna` antes de procesar
 - Matriz NxN cuadrada
 - Solo caracteres válidos (A, T, C, G)
-
-## 🎨 Frontend
-
-El proyecto incluye una interfaz web moderna y responsive:
-
-```
-http://localhost:8080
-```
-
-**Características:**
-- Formulario para ingresar matrices de ADN (NxN)
-- Validación en tiempo real
-- Resultados visuales (Mutante/Humano)
-- Panel de estadísticas en tiempo real
-- Diseño moderno con Tailwind CSS
-- Soporte para modo oscuro
 
 ## 📋 Endpoints
 
@@ -144,7 +127,6 @@ Retorna estadísticas de verificaciones.
 .\mvnw spring-boot:run
 
 # La aplicación estará disponible en:
-# - Frontend: http://localhost:8080
 # - Swagger UI: http://localhost:8080/swagger-ui.html
 # - H2 Console: http://localhost:8080/h2-console
 ```
@@ -174,7 +156,6 @@ El proyecto incluye tareas configuradas. Abre Command Palette (`Ctrl+Shift+P`) y
 - **Generate Coverage Report** - Genera reporte Jacoco
 - **Open Swagger UI** - Abre Swagger en el navegador
 - **Open H2 Console** - Abre consola H2 en el navegador
-- **Open Frontend** - Abre la UI en el navegador
 
 ### Ejecutar Tests
 
