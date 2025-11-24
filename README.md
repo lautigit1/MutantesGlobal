@@ -170,15 +170,43 @@ El proyecto incluye tareas configuradas. Abre Command Palette (`Ctrl+Shift+P`) y
 # El reporte estará en target\site\jacoco\index.html
 ```
 
+### Ver Cobertura Rápidamente
+
+```powershell
+# Script rápido para ver métricas de cobertura en consola
+.\coverage.ps1
+```
+
+**Salida:**
+```
+========== COBERTURA DE TESTS ==========
+
+LINEAS:        94.48% (171/181)
+BRANCHES:      92.39% (85/92)
+INSTRUCCIONES: 96.56% (785/813)
+
+========================================
+```
+
 ## 📊 Cobertura de Tests
 
-El proyecto incluye tests exhaustivos con cobertura **>80%**:
+El proyecto incluye tests exhaustivos con cobertura **>90%**:
 
-- **MutantDetectorTest**: 20+ tests del algoritmo
+- **Cobertura de Líneas: 94.48%** (171/181 líneas)
+- **Cobertura de Branches: 92.39%** (85/92 branches)
+- **Cobertura de Instrucciones: 96.56%** (785/813 instrucciones)
+
+### Tests Incluidos:
+
+- **MutantDetectorTest**: 26 tests del algoritmo
 - **MutantServiceTest**: Tests de caché y persistencia
 - **StatsServiceTest**: Tests de estadísticas y ratios
 - **MutantControllerTest**: Tests de integración de endpoints
 - **DnaValidatorTest**: Tests de validaciones
+- **GlobalExceptionHandlerTest**: Tests de manejo de excepciones
+- **DtoTest**: Tests de DTOs
+
+**Total: 75 tests** ✅
 
 ## 📖 Documentación API
 
@@ -277,6 +305,8 @@ private boolean checkSequence(char[][] matrix, int row, int col,
 ✅ **Arquitectura**: N-Capas clara y mantenible
 
 ## 🎓 Autor
+
+**Lautaro Salinas**
 
 Proyecto desarrollado para el desafío técnico de MercadoLibre - Mutant Detector Challenge
 
